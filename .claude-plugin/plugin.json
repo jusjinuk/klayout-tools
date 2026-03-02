@@ -1,0 +1,10 @@
+{
+  "name": "klayout-tools",
+  "description": "KLayout DRC and GDS file tools for Claude Code — write DRC rules, generate/edit GDS files, and run evaluation pipelines",
+  "version": "0.1.0",
+  "author": {
+    "name": "jusjinuk"
+  },
+  "license": "MIT",
+  "keywords": ["klayout", "drc", "gds", "semiconductor", "eda", "sky130"]
+}

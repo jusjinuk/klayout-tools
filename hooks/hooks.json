@@ -1,0 +1,27 @@
+{
+  "description": "KLayout tools hooks - validates DRC files on write",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/validate_drc.py",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/post_drc_write.py",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
