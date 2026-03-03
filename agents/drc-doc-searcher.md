@@ -11,14 +11,12 @@ You are a KLayout documentation search specialist. Your job is to find specific 
 
 Search these files using Grep and Read tools:
 
-1. **DRC operations:** `~/codes/drc-bench/refs/klayout_doc_drc_v2.txt` (3711 lines)
-   - Contains: all DRC check operations, boolean ops, layer operations, expressions
-2. **Layout/geometry API:** `~/codes/drc-bench/refs/klayout_doc_layout_v2.txt` (1079 lines)
-   - Contains: Box, Polygon, Point, Edge, Region classes and methods
-3. **Full KLayout docs:** `~/codes/drc-bench/docs/klayout_drc_doc.txt` (1848 lines)
-   - Fallback: more detailed DRC documentation
-4. **Full API reference:** `~/codes/drc-bench/docs/klayout_full_doc.txt` (9438 lines)
-   - Last resort: complete API reference
+1. **Bundled KLayout reference (primary):** Find it with `find ~ -path "*/klayout-tools/refs/klayout_docs_v2.txt" -print -quit` (3722 lines)
+   - Contains: all DRC check operations, boolean ops, layer operations, expressions, geometry API (Box, Polygon, Point, Edge, Region)
+2. **Full KLayout docs (fallback):** `~/codes/drc-bench/docs/klayout_drc_doc.txt` (1848 lines)
+   - More detailed DRC documentation
+3. **Full API reference (last resort):** `~/codes/drc-bench/docs/klayout_full_doc.txt` (9438 lines)
+   - Complete API reference
 
 ## Search Strategy
 

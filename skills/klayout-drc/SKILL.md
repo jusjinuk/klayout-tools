@@ -5,20 +5,21 @@ description: Use when writing, reading, or understanding KLayout DRC rules (.drc
 
 # KLayout DRC Rule Writing
 
-## Quick Reference
+## Reference Documentation
 
-Read the bundled cheat sheet for immediate syntax reference:
-- **DRC cheat sheet:** `Read` the file at the path shown by running: `find ~ -path "*/klayout-tools/refs/klayout_drc_cheatsheet.md" -print -quit`
-- **SKY130 layers:** `Read` the file at the path shown by running: `find ~ -path "*/klayout-tools/refs/sky130_layers.md" -print -quit`
+The plugin bundles the full KLayout DRC + Layout reference (3.7K lines). Find it by running:
 
-## Detailed Documentation Lookup
+```bash
+find ~ -path "*/klayout-tools/refs/klayout_docs_v2.txt" -print -quit
+```
 
-For operations not covered in the cheat sheet, search the full reference docs:
+Use `Grep` to search for specific operations (e.g., `separation`, `enclosing`, `sized`) and `Read` with line offsets to get surrounding context. Do NOT load the full file into context at once.
 
-- **DRC operations:** `Grep` in `~/codes/drc-bench/refs/klayout_doc_drc_v2.txt` for the operation name (e.g., `separation`, `enclosing`, `sized`)
-- **Layout/geometry API:** `Grep` in `~/codes/drc-bench/refs/klayout_doc_layout_v2.txt` for class/method names
+For SKY130 layer numbers, read the bundled reference:
 
-Do NOT read these full files into context. Use targeted Grep searches.
+```bash
+find ~ -path "*/klayout-tools/refs/sky130_layers.md" -print -quit
+```
 
 ## DRC File Template
 

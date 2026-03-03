@@ -35,5 +35,6 @@ Review the provided .drc file(s) for correctness and completeness.
 
 ## Reference Documentation
 
-For KLayout DSL details, search (do not load fully):
-- `~/codes/drc-bench/refs/klayout_doc_drc_v2.txt`
+For KLayout DSL details, search the bundled reference (do not load fully):
+- Find it: `find ~ -path "*/klayout-tools/refs/klayout_docs_v2.txt" -print -quit`
+- Use `Grep` for specific operations, `Read` with offsets for context
